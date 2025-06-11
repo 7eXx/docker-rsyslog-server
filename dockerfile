@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
     mkdir -p /var/spool/rsyslog && \
     rm -rf /var/lib/apt/lists/*
 
-COPY rsyslog.conf /etc/rsyslog.conf
+COPY rsyslog.conf /etc/rsyslog.d/server.conf
 EXPOSE 514/udp
 EXPOSE 514/tcp
 
