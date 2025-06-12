@@ -1,0 +1,10 @@
+services:
+  rsyslog:
+    build: .
+    ports:
+      - "514:514/udp"
+      - "514:514/tcp"
+      - "6514:6514/tcp"
+    volumes:
+      - ./logs:/var/log
+    restart: unless-stopped
