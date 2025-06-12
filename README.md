@@ -2,6 +2,14 @@
 This project provides a Docker container for running an Rsyslog server.  
 It is designed to be simple to set up and use, allowing you to collect and manage logs from various sources.
 
+## Docker compose
+If you prefer to use Docker Compose, you can use the provided `docker-compose.yml` file.
+To build and run the container using Docker Compose, follow these steps:
+
+```bash
+docker-compose up -d --build
+```
+
 ## Building the Docker Image
 To build the Docker image, run the following command in the root directory of the project:
 
